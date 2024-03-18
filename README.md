@@ -24,6 +24,18 @@ Add a new disk to your filesystems.php configuration file
 ],
 ```
 
+also add the service provider to your bootstrap/providers.php file
+
+```php
+<?php
+
+return [
+    App\Providers\AppServiceProvider::class,
+    // This line:
+    Atomicptr\LaravelGithubStorage\GithubStorageServiceProvider::class,
+];
+```
+
 ## Usage
 
 ```php
