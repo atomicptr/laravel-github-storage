@@ -1,0 +1,30 @@
+{
+    "name": "atomicptr/laravel-github-storage",
+    "description": "A GitHub based filesystem for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Atomicptr\\LaravelGithubStorage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christopher Kaster",
+            "email": "me@atomicptr.de"
+        }
+    ],
+    "require": {
+        "atomicptr/flysystem-github-storage": "^0.1",
+        "illuminate/support": "^11",
+        "illuminate/filesystem": "^11"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14"
+    }
+}
